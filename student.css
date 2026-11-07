@@ -1,0 +1,210 @@
+﻿.task-01 .meter {
+    width: 50%;
+}
+
+.task-02 .note {
+    width: 90%;
+    max-width: 420px;
+    margin-inline: auto;
+    box-sizing: border-box;
+}
+
+.task-03 .banner {
+    min-height: 25vh;
+}
+
+.task-04 .headline {
+    font-size: 24px;
+}
+
+@media (min-width: 600px) {
+    .task-04 .headline {
+        font-size: 40px;
+    }
+}
+
+.task-05 .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (min-width: 640px) {
+    .task-05 .actions {
+        flex-direction: row;
+    }
+}
+
+.task-06 .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+    .task-06 .menu a {
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+
+@media (min-width: 600px) {
+    .task-06 .menu {
+        flex-direction: row;
+    }
+}
+
+.task-07 .catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.task-07 .item {
+    padding: 15px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .task-07 .catalog {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .task-07 .catalog {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.task-08 .photo {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+    .task-08 .photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+@media (min-width: 700px) {
+    .task-08 .photo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+        .task-08 .photo img {
+            width: 55%;
+        }
+
+        .task-08 .photo figcaption {
+            width: 45%;
+            box-sizing: border-box;
+            padding-left: 16px;
+        }
+}
+
+.task-09 .hero {
+    min-height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+    .task-09 .hero h3 {
+        margin-block: 0 0.5rem;
+        font-size: clamp(24px, 6vw, 56px);
+    }
+
+.task-10 .workshop-page {
+    width: 95%;
+    max-width: 900px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.task-10 .workshop-header {
+    text-align: center;
+}
+
+    .task-10 .workshop-header h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+.task-10 .workshop-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+    .task-10 .workshop-menu a {
+        text-decoration: none;
+        padding: 0.5rem;
+        background: #f0f0f0;
+        border-radius: 4px;
+        color: #315cb0;
+    }
+
+.task-10 .workshop-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+}
+
+.task-10 .hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.task-10 .workshop-classes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.task-10 .class-card {
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+@media (min-width: 640px) {
+    .task-10 .workshop-menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .task-10 .workshop-hero {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .task-10 .hero-text {
+        flex: 1;
+    }
+
+    .task-10 .hero-img {
+        width: 40%;
+    }
+}
+
+@media (min-width: 900px) {
+    .task-10 .workshop-classes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
